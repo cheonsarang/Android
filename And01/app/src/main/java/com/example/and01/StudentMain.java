@@ -10,5 +10,7 @@ public class StudentMain {
         StudentMain studentMain = new StudentMain();
         studentMain.num1 = 10;
         System.out.println(studentMain.num1);
+
+
     }
 }
