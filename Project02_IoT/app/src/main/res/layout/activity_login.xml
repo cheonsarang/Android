@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".member.LoginActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+
+    <ImageView
+        android:id="@+id/t_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/t_logo"
+        android:layout_marginBottom="-43dp"
+        android:gravity="center"
+        android:textColor="#C5C8CA"
+        android:text="Login to access your bookmarks"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/t_logo"
+        android:layout_marginBottom="-70dp"
+        android:gravity="center"
+        android:text="and personal preferences."
+        android:textColor="#C5C8CA"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBaseline="@+id/content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_id"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:hint="Username"
+                android:textColorHint="#C5C8CA" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/edt_id"
+                android:src="@drawable/child" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/edt_pw"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:hint="Password" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chk_login"
+                android:shadowColor="#FCFCFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="자동 로그인"
+                android:textColor="#C5C8CA"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#4A7CAE"
+            android:text="로그인"
+            android:id="@+id/btn_login"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#4A7CAE"
+            android:text="회원가입"
+            android:id="@+id/btn_join"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#4A7CAE"
+            android:text="소셜로그인" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.Tab1Fragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="180dp"
+      android:orientation="vertical">
+
+      <LinearLayout
+
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_margin="5dp">
+          <TextView
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="wrap_content"
+              android:textColor="#2289EF"
+              android:textSize="13dp"
+              android:text="공지사항"/>
+          <TextView
+
+              android:id="@+id/tv_noti1"
+              android:layout_width="0dp"
+              android:layout_weight="6"
+              android:layout_height="wrap_content"
+              android:textSize="14dp"
+              android:text="[안내] 강원지역 학교게시물 연동관련 안내"/>
+      </LinearLayout>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_margin="5dp"
+          android:background="#B1B1B1"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_margin="5dp">
+          <TextView
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="wrap_content"
+              android:textColor="#2289EF"
+              android:textSize="14dp"
+              android:text="공지사항"/>
+          <TextView
+              android:id="@+id/tv_noti2"
+              android:layout_width="0dp"
+              android:layout_weight="6"
+              android:layout_height="wrap_content"
+              android:textSize="13dp"
+              android:text="학생건강 자가진단 알림&amp;바로가기 메뉴 서비스 중지 안내"/>
+      </LinearLayout>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_margin="5dp"
+          android:background="#B1B1B1"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_margin="5dp">
+          <TextView
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="wrap_content"
+              android:textColor="#2289EF"
+              android:textSize="14dp"
+              android:text="공지사항"/>
+          <TextView
+              android:id="@+id/tv_noti3"
+              android:layout_width="0dp"
+              android:layout_weight="6"
+              android:layout_height="wrap_content"
+              android:textSize="13dp"
+              android:text="동영상 다운로드 기능 업데이트 안내"/>
+      </LinearLayout>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_margin="5dp"
+          android:background="#B1B1B1"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_margin="5dp"
+          android:gravity="center">
+          <TextView
+              android:layout_width="40dp"
+              android:layout_height="wrap_content"
+              android:textColor="#2289EF"
+              android:textSize="14dp"
+              android:text="내소식"/>
+          <TextView
+              android:layout_width="50dp"
+              android:layout_height="wrap_content"
+              android:textSize="14dp"
+              android:text="더보기"/>
+          <ImageView
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:src="@drawable/gw"
+              android:layout_marginLeft="-15dp"/>
+
+
+      </LinearLayout>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_margin="5dp"
+          android:background="#B1B1B1"/>
+
+  </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="이달의솜씨왕">
+        <item>전체 카테고리 보기</item>
+        <item>3월의 솜씨왕</item>
+        <item>4월의 솜씨왕</item>
+        <item>5월의 솜씨왕</item>
+        <item>6월의 솜씨왕</item>
+        <item>7월의 솜씨왕</item>
+        <item>8월의 솜씨왕</item>
+
+    </string-array>
+
+</resources>

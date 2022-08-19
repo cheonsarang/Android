@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/drawable/border.xml" value="0.22083333333333333" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/drawable/border1.xml" value="0.22083333333333333" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/drawable/ic_baseline_arrow_drop_up_24.xml" value="0.271875" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/drawable/shape.xml" value="0.31354166666666666" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/activity_calendar.xml" value="0.29739583333333336" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/activity_home_in.xml" value="0.17806484295845998" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/activity_home_in_more.xml" value="0.21422101449275363" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/activity_main.xml" value="0.2046875" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/activity_splash.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/fragment_calendar.xml" value="0.33" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/fragment_class.xml" value="0.25" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/fragment_hitalk.xml" value="0.2046875" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/fragment_home.xml" value="0.2046875" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/fragment_home_in_more1_.xml" value="0.21422101449275363" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/fragment_more.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/fragment_tab1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/fragment_tab2.xml" value="0.67" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/fragment_tab3.xml" value="0.271286231884058" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/item_class.xml" value="0.29739583333333336" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/layout/item_home_in_more_listview.xml" value="0.33" />
+        <entry key="..\:/Study_Android/workspace/LastPorject_Hiclass/app/src/main/res/menu/bottom_nav.xml" value="0.36614583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

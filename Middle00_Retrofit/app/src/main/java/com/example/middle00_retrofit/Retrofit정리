@@ -1,0 +1,51 @@
+Retrofit 정리 ( https://square.github.io/retrofit/ )
+
+/* ②
+CONVERTERS
+Gson: com.squareup.retrofit2:converter-gson
+
+응답 바로처리하기위해 필요
+Scalars (primitives, boxed, and String): com.squareup.retrofit2:converter-scalars
+
+implementation 'com.squareup.retrofit2:retrofit:(insert latest version)'
+
+converter-gson, converter-scalars, retrofit : Maven Repository에 검색해서 gradle에 넣기
+*/
+
+- 안드로이드 => 미들웨어 접근할 때 사용할 수 있는 방식은 여러가지가 있음
+( 미들웨어 : Url 요청시 DB 에 대신 접근해서 정보를 return 줄 수 있는 툴, 프로젝트를 의미 ) = 이클립스( Dynamic Web Project, Spring4 ... )
+( 안드로이드에서 Http, Https 접근 할 때 사용하는 Lib( API ) : Volley, HttpClienct(사용불가), Retrofit( 현업에서 가장 많이 사용 )
+
+○ 앱에서 해야할 것( ※ 필수 ※ )
+- 앱에서 네트워크 통신을 구현하려면 우선 Manifest 에 권한요청 : 필수이나 높은 권한을 요구하진 않음
+- ① UsesClearTrafix = 앱에서는 기본적으로 Http 형태의 Url 요청을 전부 막아놨음, 사용하려면 UsesClearTrafix을 사용한다고 명시(Manifest)
+        <application
+                android:usesCleartextTraffic="true"
+
+○ 앱에서 사용할 것( 선택 ② )
+- build.gradle(Module) dependencies 에 추가
+- Gson 사용
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+- Retrofit
+    implementation group: 'com.squareup.retrofit2', name: 'converter-gson', version: '2.3.0' // 리턴을 Gson 객체를 이용할 때 사용
+    implementation group: 'com.squareup.retrofit2', name: 'converter-scalars', version: '2.3.0' //응답결과 String
+    implementation group: 'com.squareup.retrofit2', name: 'retrofit', version: '2.3.0'  //Retrofit 자체 ↑ 두가지 컨버터를 이용
+
+
+○ 구현부분
+
+- ApiClient 라는 클래스를 만들어서( 이름 규칙x ) Retrofit 객체의 설정을 넣고 인스턴스화( 초기화 ) 할 수 있는 클래스를 정의
+- Interface 형태로 접속정보나 보낼 정보 등등 정의해놓은 인터페이스 구조를 만든다 ( 콜백으로 리턴받음 )
+
+=> 재사용이 편하게 AsynchTask 를 이용하고 직접 callback 까지 만들기
+
+○ Spring
+// 미들웨어 : 중간에서 DB에 접속을 하고 어떤 결과를 String이나 다른 데이터 형태로 return을 주기위한것
+// Android => Database에 직접 접근이 안됨 , 막아놨음.
+// C<- Ojdbc나 여러가지 lib를 사용할수없는 저급 언어에서 DB데이터가 필요할때.
+// 공공데이터 : DB접속을 바로하는거 아님(보안) 사용자가(개발자)필요한 정보를 어떠한 키에 의해서 return해줌
+// @RestController <- 응답을 주기위한 콘트롤러
+// @ResponseBody <- 회원가입,로그인 등의 Ajax통신을 이용한 화면 비동기 처리를 위한 어노테이션
+// 요청 , 응답 : 기본 형태 String
+// ListCollection , String Object 등 json형태를 편하게 사용하기 위한 Lib
+// Gson

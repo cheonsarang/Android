@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--translate : 실제 x 와 y 값이 변하는 것은 아니나 눈으로 봤을 때 변하는 것처럼 보임-->
+    <!--flow : 글자가 x축(좌,우) 어느 부분에서 시작해서 지정한 곳 까지 이동하는 것-->
+    <translate
+        android:fromXDelta="100%p"
+        android:toXDelta="0%p"
+        android:duration="2000"
+        android:repeatCount="infinite"
+        android:repeatMode="restart"/>
+
+</set>

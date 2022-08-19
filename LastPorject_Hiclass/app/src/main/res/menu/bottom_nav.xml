@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/tab1"
+        android:icon="@drawable/home"
+        android:title="홈"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/tab2"
+        android:icon="@drawable/cl"
+        android:title="클래스"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/tab3"
+        android:icon="@drawable/talk"
+        android:title="하이톡"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/tab4"
+        android:icon="@drawable/calendar"
+        android:title="달력"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/tab5"
+        android:icon="@drawable/menu"
+        android:title="더보기"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>

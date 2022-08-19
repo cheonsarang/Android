@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/blue"
+                android:scaleType="fitXY"/>
+            <ImageView
+                android:id="@+id/img_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/person1"
+                android:scaleType="fitStart"
+                android:padding="15dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="20dp"
+                    android:text="LOVE FM"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/emp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="0dp"
+                    android:text="김태현의 정치쇼 3,4부"
+                    android:textSize="20dp"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/icon_play"/>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LastPorject_Hiclass</string>
+    <string name="tab1">여름철 물놀이, 이\n것만은 꼭 기억해요!</string>
+    <string name="tab2">아동안전지킴이집\n이란?</string>
+    <string name="tab3">폭염&amp;집중 호우 예\n방 안전 수칙</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
