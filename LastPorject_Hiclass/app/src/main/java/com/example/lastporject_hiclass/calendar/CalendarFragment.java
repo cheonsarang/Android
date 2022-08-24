@@ -42,7 +42,11 @@ public class CalendarFragment extends Fragment {
         calendarView.addDecorator(new SundayDecorator());
         calendarView.addDecorator(new SaturdayDecorator());
 
+
+
         ArrayList<CalendarDay> dates = new ArrayList<>();
+        calendarView.addDecorator(new EventDecorator(Color.RED, dates, getContext()));
+
 
 
 

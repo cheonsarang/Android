@@ -41,7 +41,7 @@ import kotlin.jvm.functions.Function2;
 
 public class LoginActivity extends AppCompatActivity {
     NidOAuthLoginButton btn_naver;
-     Button btn_login;
+     Button btn_login, btn_join;
     EditText edt_id, edt_pw;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,13 +58,22 @@ public class LoginActivity extends AppCompatActivity {
         edt_id = findViewById(R.id.edt_id);
         edt_pw = findViewById(R.id.edt_pw);
         btn_login = findViewById(R.id.btn_login);
+        btn_join = findViewById(R.id.btn_join);
+
+        btn_join.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, JoinActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (CommonMethod.isCheckEditText(edt_id) && CommonMethod.isCheckEditText(edt_pw)) {
                     //미들웨어 접근
-                    login(edt_id.getText()+"", edt_pw.getText()+"", null);
+                    login(edt_id.getText()+"", edt_pw.getText()+"", "N");
 
                 } else {
                     Toast.makeText(LoginActivity.this, "아이디 또는 비밀번호를 입력하세요.", Toast.LENGTH_SHORT).show();
@@ -235,23 +244,22 @@ public class LoginActivity extends AppCompatActivity {
         task.excuteAsk(new CommonAskTask.AsynckTaskCallBack() {
             @Override
             public void onResult(String data, boolean isResult) {
-
-                    Log.d("로그인", "onResult: " + data);
-                    CommonVal.loginInfo = new Gson().fromJson(data , AndVO.class);
-                    if(CommonVal.loginInfo==null && social == null){
-                        Log.d("로그인", "onResult: 아디비번틀림");
-                    }else if(social.equals("social") && CommonVal.loginInfo == null) {
-                        // 회원가입으로 보내줘야 함
-                        Intent intent = new Intent(LoginActivity.this, JoinActivity.class);
-                        intent. putExtra("email", email);
-                        startActivity(intent);
-                    }else if(CommonVal.loginInfo != null) {
-                        //메인으로 보내야 함
-                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                        startActivity(intent);
-                    }else {
-                        Log.d("로그", "onResult: 세개의 if 문 모두 실패?!");
-                    }
+                Log.d("로그인", "onResult: " + data);
+                CommonVal.loginInfo = new Gson().fromJson(data , AndVO.class);
+                if(CommonVal.loginInfo==null && social == null){
+                    Log.d("로그인", "onResult: 아디비번틀림");
+                }else if(social.equals("social") && CommonVal.loginInfo == null) {
+                    // 회원가입으로 보내줘야 함
+                    Intent intent = new Intent(LoginActivity.this, JoinActivity.class);
+                    intent. putExtra("email", email);
+                    startActivity(intent);
+                }else if(CommonVal.loginInfo != null) {
+                    //메인으로 보내야 함
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }else {
+                    Log.d("로그", "onResult: 세개의 if 문 모두 실패?!");
+                }
 
             }
         });

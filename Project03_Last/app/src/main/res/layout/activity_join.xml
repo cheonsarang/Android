@@ -8,6 +8,12 @@
     tools:context=".member.JoinActivity"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imgv_profile"
+        android:src="@drawable/ic_launcher_foreground"/>
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

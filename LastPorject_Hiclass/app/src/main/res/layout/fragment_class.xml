@@ -59,7 +59,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:padding="5dp"
+            android:padding="2dp"
             android:background="@drawable/border">
             <ImageView
                 android:layout_width="30dp"
@@ -73,9 +73,10 @@
                 android:layout_gravity="center"/>
         </FrameLayout>
         <FrameLayout
+            android:id="@+id/fl_serach"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:padding="5dp"
+            android:padding="2dp"
             android:layout_height="wrap_content"
             android:background="@drawable/border"
             android:layout_marginStart="5dp">
@@ -129,7 +130,7 @@
             android:layout_weight="1"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:src="@drawable/notice_more"/>
+            android:src="@drawable/post"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="8"
@@ -155,6 +156,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="45dp"
+        android:id="@+id/ll_serach"
         android:orientation="horizontal">
         <ImageView
             android:layout_margin="13dp"
@@ -162,7 +164,7 @@
             android:layout_weight="1"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:src="@drawable/notice_more"/>
+            android:src="@drawable/serach"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="8"

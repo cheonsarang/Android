@@ -56,4 +56,12 @@ dependencies {
 
     /*바텀 네비 UI API*/
     implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.9'
+
+    // 네이버 지도 SDK
+    implementation 'com.naver.maps:map-sdk:3.15.0'
+
+    // https://mvnrepository.com/artifact/com.github.bumptech.glide/glide
+    //사진들을 (URL, 다른 형태의 파일들) 편하게 붙이기 위한 API
+    implementation group: 'com.github.bumptech.glide', name: 'glide', version: '4.8.0'
+
 }

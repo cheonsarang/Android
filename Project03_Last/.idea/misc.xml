@@ -8,9 +8,13 @@
         <entry key="..\:/Study_Android/workspace/Project03_Last/app/src/main/res/layout/activity_join.xml" value="0.22552083333333334" />
         <entry key="..\:/Study_Android/workspace/Project03_Last/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Study_Android/workspace/Project03_Last/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Study_Android/workspace/Project03_Last/app/src/main/res/layout/btm_dilog_map.xml" value="0.2046875" />
         <entry key="..\:/Study_Android/workspace/Project03_Last/app/src/main/res/layout/fragment_cus.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/workspace/Project03_Last/app/src/main/res/layout/fragment_map.xml" value="0.2" />
+        <entry key="..\:/Study_Android/workspace/Project03_Last/app/src/main/res/layout/item_btm_dialog_recv.xml" value="0.36614583333333334" />
         <entry key="..\:/Study_Android/workspace/Project03_Last/app/src/main/res/layout/item_cus_recv.xml" value="0.36614583333333334" />
         <entry key="..\:/Study_Android/workspace/Project03_Last/app/src/main/res/menu/menu_main_btm.xml" value="0.3078125" />
+        <entry key="..\:/Study_Android/workspace/Project03_Last/app/src/main/res/xml/file_path.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>

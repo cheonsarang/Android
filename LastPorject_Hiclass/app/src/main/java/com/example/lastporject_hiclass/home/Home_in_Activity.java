@@ -15,7 +15,7 @@ import com.google.android.material.tabs.TabLayout;
 public class Home_in_Activity extends AppCompatActivity {
 
     TextView title, content, tv_like, content_title;
-    ImageView imgv_home;
+    ImageView imgv_home, back;
     LinearLayout like_line;
     TabLayout tabs;
     @Override
@@ -30,6 +30,7 @@ public class Home_in_Activity extends AppCompatActivity {
         imgv_home = findViewById(R.id.imgv_home);
         like_line = findViewById(R.id.like_line);
         tabs = findViewById(R.id.tabs);
+        back = findViewById(R.id.back);
         Intent intent = getIntent();
 
          if(intent.getStringExtra("page").equals("home")) {
@@ -101,7 +102,12 @@ public class Home_in_Activity extends AppCompatActivity {
          }
 
 
-
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
 
 

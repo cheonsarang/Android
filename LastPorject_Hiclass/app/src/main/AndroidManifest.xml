@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LastPorject_Hiclass">
         <activity
+            android:name=".classs.Class_in_Activity"
+            android:exported="true" />
+        <activity
             android:name=".home.Home_in_more_Activity"
             android:exported="true" />
         <activity

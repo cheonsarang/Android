@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.lastporject_hiclass.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Class_Adapter extends RecyclerView.Adapter<Class_Adapter.classHolder>{
     LayoutInflater inflater;
@@ -21,6 +22,7 @@ public class Class_Adapter extends RecyclerView.Adapter<Class_Adapter.classHolde
         this.inflater = inflater;
         this.list = list;
     }
+
 
     @NonNull
     @Override

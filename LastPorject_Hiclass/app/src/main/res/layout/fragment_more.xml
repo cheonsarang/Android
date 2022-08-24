@@ -20,7 +20,7 @@
             app:civ_border_width="5dp"
             android:src="@drawable/image9"
             android:layout_margin="20dp"/>
-        
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/gear"
-            android:layout_marginHorizontal="80dp"
+            android:layout_marginHorizontal="60dp"
             android:layout_marginTop="10dp"/>
     </LinearLayout>
 
@@ -60,14 +60,16 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="25dp"
+                android:layout_height="0dp"
+                android:layout_weight="2"
                 android:src="@drawable/bell_more"/>
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="17dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="14dp"
                 android:text="알림 설정"
                 android:textStyle="bold"/>
         </LinearLayout>
@@ -88,14 +90,16 @@
 
             <ImageView
                 android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="2"
                 android:src="@drawable/star"/>
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="14dp"
                 android:text="스크랩"
-                android:textSize="17dp"
                 android:textStyle="bold"/>
         </LinearLayout>
         <View
@@ -107,18 +111,21 @@
             android:layout_width="0dp"
             android:gravity="center"
             android:layout_weight="1"
+            android:layout_marginTop="8dp"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <ImageView
                 android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
                 android:src="@drawable/cl"/>
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="17dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="14dp"
                 android:text="나의 클래스"
                 android:textStyle="bold"/>
         </LinearLayout>
@@ -136,13 +143,15 @@
 
             <ImageView
                 android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_height="0dp"
+                android:layout_weight="2"
                 android:src="@drawable/school"/>
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="17dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="14dp"
                 android:text="나의 학교"
                 android:textStyle="bold"/>
         </LinearLayout>
@@ -163,14 +172,15 @@
             android:layout_margin="13dp"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
             android:src="@drawable/notice_more"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="8"
             android:layout_height="wrap_content"
             android:text="공지사항"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textStyle="bold"
             android:layout_marginStart="8dp"
             android:layout_gravity="center"/>
@@ -178,7 +188,8 @@
             android:layout_margin="10dp"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="40dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
             android:src="@drawable/gw"/>
     </LinearLayout>
     <View
@@ -196,14 +207,15 @@
             android:layout_margin="13dp"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
             android:src="@drawable/gift"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="8"
             android:layout_height="wrap_content"
             android:text="이벤트"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textStyle="bold"
             android:layout_marginStart="8dp"
             android:layout_gravity="center"/>
@@ -230,14 +242,15 @@
             android:layout_margin="13dp"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
             android:src="@drawable/help_more"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="8"
             android:layout_height="wrap_content"
             android:text="자주 묻는 질문"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textStyle="bold"
             android:layout_marginStart="8dp"
             android:layout_gravity="center"/>
@@ -262,14 +275,15 @@
             android:layout_margin="13dp"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
             android:src="@drawable/talking_more"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="8"
             android:layout_height="wrap_content"
             android:text="하이클래스 문의하기"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textStyle="bold"
             android:layout_marginStart="8dp"
             android:layout_gravity="center"/>
