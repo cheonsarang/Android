@@ -1,7 +1,7 @@
 package com.example.and01;
 
 public class StudentMain {
-    //주석
+    //주석 주석
     //변수선언
     int num1, num2;
 
